@@ -1,0 +1,21 @@
+This is a shared file. Added some words from laptop branch.
+
+<<<<<<< HEAD
+This computercomputercomputerfile will be changed by both the laptop and computer.
+
+Adding something from computer branch.
+
+computercomputercomputercomputercomputercomputercomputercomputercomputercomputer
+
+We want no laptop stuff in here
+||||||| 70e0d69
+This file will be changed by both the laptop and computer.
+=======
+This laptoplaptoplaptopfile will be changed by both the laptop and computer.
+
+Added something from laptop branch. 
+
+waaah
+
+We want no computer stuff in here.
+>>>>>>> laptop
