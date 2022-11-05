@@ -549,7 +549,7 @@ bindkey -M vicmd -s ' r' "qqoemre\n^["
 bindkey -M vicmd -s ' gp' "qqogit add -u && git commit -m \"$$\" && git push origin main\n^["
 
 bindkey -M vicmd '^[[B' "copymode"
-noooooooooobindkey -M vicmd '^[[A' "copymode"
+bindkey -M vicmd '^[[A' "copymode"
 
 #$terminfo[kcuu1] and $terminfo[kcud1] instead.
 
