@@ -1,6 +1,6 @@
 I want to switch into another layer for one keypress only. 
 
-Layer-next seems to meet this requirement as defined in the tutorial:
+Layer-next seems to be suited for this, as defined in the tutorial:
 
 ```
 'layer-next', once pressed, primes KMonad to handle the next press from some
