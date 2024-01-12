@@ -21,18 +21,20 @@ To borrow the examples from #167, suppose I have
   nsh (layer-next sft))
 ```
 
+Assuming layer "sft" has capitalised all alpha keys like Q W E R T Y
+
 ### Expected behaviour
 
-Assuming layer "sft" has all for capitalised keys like Q W E R T Y
+I expect to see the layer used for only one keypress.
 
 ```
 T@nsh Ta Tb       ==> Ab
 T@nsh Pa Pb Ra Rb ==> Ab
 ```
 
-### Actual/current behaviour
+## Actual/current behaviour
 
-Then the current layer-next behaviour will give
+But if many keys are pressed togoether they are all made in the layer
 
 ```
 T@nsh Ta Tb       ==> Ab
