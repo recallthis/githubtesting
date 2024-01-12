@@ -1,5 +1,13 @@
 # githubtesting
 
+This issue applies to around-next also, and closely resembles #167 and #169
+
+[Is there a version of tap-next that affects only one subsequent press? #166](https://github.com/kmonad/kmonad/issues/166)
+
+[Make around-next only affect the next button #167](https://github.com/kmonad/kmonad/pull/167)
+
+
+
 Layer-next is defined in the tutorial as affecting only one subsequent press: 
 
 ```
@@ -8,12 +16,6 @@ Layer-next is defined in the tutorial as affecting only one subsequent press:
 ```
 
 However, it really handles next sequence of conjoined presses
-
-This applies to around-next too and closely resembles issue #167 and resolution #169
-
-[Is there a version of tap-next that affects only one subsequent press? #166](https://github.com/kmonad/kmonad/issues/166)
-
-[Make around-next only affect the next button #167](https://github.com/kmonad/kmonad/pull/167)
 
 So to use the minilanguage, suppose I have
 
