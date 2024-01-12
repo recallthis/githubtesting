@@ -1,4 +1,4 @@
-### Description of the issue
+
 
 Layer-next is defined in the tutorial as affecting only one subsequent press: 
 
