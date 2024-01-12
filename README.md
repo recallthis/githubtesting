@@ -12,7 +12,7 @@ However, it really handles multiple next presses if they are pressed together.
 This issue applies to around-next also, and closely resembles  [#166](https://github.com/kmonad/kmonad/issues/166)
 and [#167](https://github.com/kmonad/kmonad/pull/167).
 
-## Steps to reduce the bug
+# Steps to reproduce the issue
 
 To borrow the examples from #167, suppose I have
 
