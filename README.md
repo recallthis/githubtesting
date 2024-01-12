@@ -17,7 +17,7 @@ Layer-next is defined in the tutorial as affecting only one subsequent press:
 
 However, it really handles next sequence of conjoined presses
 
-# Steps to reduce the bug
+## Steps to reduce the bug
 
 To borrow the examples from #167, suppose I have
 
