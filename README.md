@@ -32,7 +32,7 @@ T@nsh Ta Tb       ==> Ab
 T@nsh Pa Pb Ra Rb ==> Ab
 ```
 
-## Actual/current behaviour
+### Actual/current behaviour
 
 But if many keys are pressed together they are all made in the layer.
 
