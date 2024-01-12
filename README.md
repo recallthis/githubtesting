@@ -17,27 +17,31 @@ Layer-next is defined in the tutorial as affecting only one subsequent press:
 
 However, it really handles next sequence of conjoined presses
 
-So to use the minilanguage, suppose I have
+# Steps to reduce the bug
+
+To borrow the examples from #167, suppose I have
 
 ```
 (defalias
   nsh (layer-next sft))
 ```
 
-And layer "sft" is a layer with keys like Q W E R T Y
+## Expected behaviour
+
+Assuming layer "sft" has all for capitalised keys like Q W E R T Y
+
+```
+T@nsh Ta Tb       ==> Ab
+T@nsh Pa Pb Ra Rb ==> Ab
+```
+
+## Actual/current behaviour
 
 Then the current layer-next behaviour will give
 
 ```
 T@nsh Ta Tb       ==> Ab
 T@nsh Pa Pb Ra Rb ==> AB
-```
-
-while the expected behaviour would be
-
-```
-T@nsh Ta Tb       ==> Ab
-T@nsh Pa Pb Ra Rb ==> Ab
 ```
 
 David Janssen created an "around-next-single" button to solve the around-next issue, and I attempted to duplicate that without success.
