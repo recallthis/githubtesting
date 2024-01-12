@@ -6,9 +6,7 @@ This issue applies to around-next also, and closely resembles #167 and #169
 
 [Make around-next only affect the next button #167](https://github.com/kmonad/kmonad/pull/167)
 
-# Description of the issue
-
----
+## Description of the issue
 
 Layer-next is defined in the tutorial as affecting only one subsequent press: 
 
