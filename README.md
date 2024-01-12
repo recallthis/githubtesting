@@ -11,7 +11,7 @@ However, it really handles next sequence of conjoined presses
 
 Notice anything familiar?
 
-This issue closely resembles issue 166 about making around-next only affect [one subsequent press](https://github.com/kmonad/kmonad/issues/166).
+This closely resembles [issue 166](https://github.com/kmonad/kmonad/issues/166) about making around-next only affect one subsequent press.
 
 So to use the minilanguage, suppose I have
 
