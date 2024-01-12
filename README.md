@@ -43,7 +43,7 @@ T@nsh Pa Pb Ra Rb ==> AB
 
 ### Attempt to create a button
 
-David Janssen created an "around-next-single" button (discussed in this [comment](https://github.com/kmonad/kmonad/issues/166#issuecomment-774505779)) to solve the around-next issue. I attempted to use that logic for layer-next-single but the layer-next-single behaviour was no different.
+David Janssen created an "around-next-single" button (discussed in this [comment](https://github.com/kmonad/kmonad/issues/166#issuecomment-774505779)) to solve the around-next issue. I attempted to use that logic but the behaviour was no different to layer-next.
 
 ```
 layerNextSingle :: LayerTag -> Button
