@@ -57,6 +57,6 @@ layerNextSingle t = onPress $ await isPress $ \_ -> do
 
 ### Other ways of doing this
 
-This can be done by creating layers full of aliases whose only function is to perform one key and return but it seems quite wasteful of config space. 
+This can be done by creating layers full of aliases whose only function is to perform one key and return but it uses a lot of config space.
 
 Or maybe there is some other way?
