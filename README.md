@@ -1,32 +1,103 @@
 # githubtesting
+This issue closely resembles issue 166 about making around-next only affect [one subsequent press](https://github.com/kmonad/kmonad/issues/166). Layer-next is defined in the tutorial:
 
-Layer-next is able to change more buttons than just the very next one, provided the next button is released after some other buttons were pressed.
+Layer-next is defined as affecting only one subsequent press: 
 
-For example, suppose we had
+```
+'layer-next', once pressed, primes KMonad to handle the next press from some
+  arbitrary layer.
+```
+
+However it really handles next sequence of conjoined presses.
+
+This issue closely resembles issue 166 about making around-next only affect [one subsequent press](https://github.com/kmonad/kmonad/issues/166). 
+
+So to use the minilanguage, suppose I have
 
 ```
 (defalias
-  nsh (around-next sft))
+  nsh (layer-next sft))
 ```
 
-Then the old behaviour would give
+And layer "sft" is a layer with keys like Q W E R T Y
+
+Then the current layer-next behaviour will give
 
 ```
 T@nsh Ta Tb       ==> Ab
 T@nsh Pa Pb Ra Rb ==> AB
 ```
 
-while the intended behaviour (and the one that this commit introduces)
-would be
+while the expected behaviour would be
 
 ```
 T@nsh Ta Tb       ==> Ab
 T@nsh Pa Pb Ra Rb ==> Ab
 ```
 
-Sound familiar? :D That is because this issue mirrors the around next issue, in that the layer-next has the same issue as around-next.
+I have tried to create a button similar to the "around-next-single" button that David Janssen created to solve the issue, but for some reason the logic does not apply to layers.
+
+
+So to use the minilanguage, suppose I have
+
+```
+(defalias
+  nsh (layer-next sft))
+```
+
+And layer "sft" is a layer with keys like Q W E R T Y
+
+Then the current layer-next behaviour will give
+
+```
+T@nsh Ta Tb       ==> Ab
+T@nsh Pa Pb Ra Rb ==> AB
+```
+
+while the expected behaviour would be
+
+```
+T@nsh Ta Tb       ==> Ab
+T@nsh Pa Pb Ra Rb ==> Ab
+```
 
 I have tried to create a button similar to the "around-next-single" button that David Janssen created to solve the issue, but for some reason the logic does not apply to layers.
+
+
+Layer-next is defined as affecting only one subsequent press: 
+
+```
+'layer-next', once pressed, primes KMonad to handle the next press from some
+  arbitrary layer.
+```
+
+However it really handles next sequence of conjoined presses.
+
+So to use the minilanguage, suppose I have
+
+```
+(defalias
+  nsh (layer-next sft))
+```
+
+And layer "sft" is a layer with keys like Q W E R T Y
+
+Then the current layer-next behaviour will give
+
+```
+T@nsh Ta Tb       ==> Ab
+T@nsh Pa Pb Ra Rb ==> AB
+```
+
+while the expected behaviour would be
+
+```
+T@nsh Ta Tb       ==> Ab
+T@nsh Pa Pb Ra Rb ==> Ab
+```
+
+I have tried to create a button similar to the "around-next-single" button that David Janssen created to solve the issue, but for some reason the logic does not apply to layers.
+
 
 ```
 layerNextSingle :: LayerTag -> Button
