@@ -41,7 +41,7 @@ T@nsh Ta Tb       ==> Ab
 T@nsh Pa Pb Ra Rb ==> AB
 ```
 
-David Janssen created an "around-next-single" button to solve the around-next issue. I attempted to use that logic for layers but it was unsucessful as the layer-next behaviour was unchanged.
+David Janssen created an "around-next-single" button to solve the around-next issue. I attempted to use that logic for layer-next-single but it was unsucessful as the behaviour was unchanged.
 
 ```
 layerNextSingle :: LayerTag -> Button
