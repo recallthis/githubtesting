@@ -1,6 +1,6 @@
 I want to switch into another layer for one keypress only. 
 
-Layer-next is defined in the tutorial as affecting only one subsequent press: 
+Layer-next seems to meet this requirement as defined in the tutorial:
 
 ```
 'layer-next', once pressed, primes KMonad to handle the next press from some
@@ -57,6 +57,5 @@ layerNextSingle t = onPress $ await isPress $ \_ -> do
 
 ### Other ways of doing this
 
-This can be done by creating layers full of aliases whose only function is to perform one key and return but it uses a lot of config space.
+This can be done by creating layers full of aliases whose only function is to perform one key and return but it uses a lot of config space if you use a lot of these type of layers. 
 
-Or maybe there is some other way?
