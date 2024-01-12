@@ -1,7 +1,5 @@
 # githubtesting
 
-This issue closely resembles issue 166 about making around-next only affect [one subsequent press](https://github.com/kmonad/kmonad/issues/166).
-
 Layer-next is (like around-next) defined as affecting only one subsequent press: 
 
 ```
@@ -9,7 +7,11 @@ Layer-next is (like around-next) defined as affecting only one subsequent press:
   arbitrary layer.
 ```
 
-However, it really handles next sequence of conjoined presses.
+However, it really handles next sequence of conjoined presses
+
+Notice anything familiar?
+
+This issue closely resembles issue 166 about making around-next only affect [one subsequent press](https://github.com/kmonad/kmonad/issues/166).
 
 So to use the minilanguage, suppose I have
 
@@ -34,7 +36,7 @@ T@nsh Ta Tb       ==> Ab
 T@nsh Pa Pb Ra Rb ==> Ab
 ```
 
-I have tried to create a button similar to the "around-next-single" button that David Janssen created to solve the issue, but for some reason the logic does not apply to layers.
+David Janssen created an "around-next-single" button to solve the around-next issue, and I attempted to duplicate that without success.
 
 ```
 layerNextSingle :: LayerTag -> Button
