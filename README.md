@@ -1,4 +1,4 @@
-## Description of the issue
+### Description of the issue
 
 Layer-next is defined in the tutorial as affecting only one subsequent press: 
 
@@ -12,7 +12,7 @@ However, it really handles multiple next presses if they are pressed together.
 This issue applies to around-next also, and closely resembles  [#166](https://github.com/kmonad/kmonad/issues/166)
 and [#167](https://github.com/kmonad/kmonad/pull/167).
 
-## Steps to reproduce the issue
+### Steps to reproduce the issue
 
 To borrow the examples from #167, suppose I have
 
@@ -21,7 +21,7 @@ To borrow the examples from #167, suppose I have
   nsh (layer-next sft))
 ```
 
-## Expected behaviour
+### Expected behaviour
 
 Assuming layer "sft" has all for capitalised keys like Q W E R T Y
 
@@ -30,7 +30,7 @@ T@nsh Ta Tb       ==> Ab
 T@nsh Pa Pb Ra Rb ==> Ab
 ```
 
-## Actual/current behaviour
+### Actual/current behaviour
 
 Then the current layer-next behaviour will give
 
