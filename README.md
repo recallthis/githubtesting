@@ -6,5 +6,5 @@ And the [v0.4.1 prerelease](https://github.com/kmonad/kmonad/commit/1ce9d07794c9
 
 And #167 [Make aroundNext only affect the next button](https://github.com/kmonad/kmonad/commit/5e4a3d00a54573997fa1f3423265b7ac4e25acb9)
 
-It's the same with (layer-next mylayer) and (around-next (layer-toggle mylayer)).
+I got the same results with (layer-next mylayer) and (around-next (layer-toggle mylayer)).
 
