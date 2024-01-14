@@ -4,7 +4,7 @@ I tried the first layer-next commit that [Added leader-key like button](https://
 
 And the [v0.4.1 prerelease](https://github.com/kmonad/kmonad/commit/1ce9d07794c9b1edfa5bc3c15485d79082770b28) from Sep 2020
 
-And #167 [Make aroundNext only affect the next button] https://github.com/kmonad/kmonad/commit/5e4a3d00a54573997fa1f3423265b7ac4e25acb9
+And #167 [Make aroundNext only affect the next button](https://github.com/kmonad/kmonad/commit/5e4a3d00a54573997fa1f3423265b7ac4e25acb9)
 
 I tried (layer-next layer) (around-next (layer-toggle layer)).
 
