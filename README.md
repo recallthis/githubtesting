@@ -1,61 +1,11 @@
-I want to switch into another layer for one keypress only. 
+I was using a later commit from Jun 2021 ([Add logo to README #277](https://github.com/kmonad/kmonad/commit/e3e0154e7d3d37e94980a8c9274ed39d4a860ecc))
 
-Layer-next seems to be suited for this, as defined in the tutorial:
+I tried the first layer-next commit that [Added leader-key like button](https://github.com/kmonad/kmonad/commit/de85686be1a26cffa7e0dc1c2dcdffae452c86e8)
 
-```
-'layer-next', once pressed, primes KMonad to handle the next press from some
-  arbitrary layer.
-```
+And the [v0.4.1 prerelease](https://github.com/kmonad/kmonad/commit/1ce9d07794c9b1edfa5bc3c15485d79082770b28) from Sep 2020
 
-However, it really handles multiple next presses if they are pressed together.
+And #167 [Make aroundNext only affect the next button] https://github.com/kmonad/kmonad/commit/5e4a3d00a54573997fa1f3423265b7ac4e25acb9
 
-This issue applies to around-next also, and closely resembles  [#166](https://github.com/kmonad/kmonad/issues/166)
-and [#167](https://github.com/kmonad/kmonad/pull/167).
+I tried (layer-next layer) (around-next (layer-toggle layer)).
 
-### Steps to reproduce the issue
-
-To borrow the examples from #167, suppose I have
-
-```
-(defalias
-  nsh (layer-next sft))
-```
-
-Assuming layer "sft" has capitalised all alpha keys like Q W E R T Y
-
-### Expected behaviour
-
-I expect to see the layer used for only one keypress.
-
-```
-T@nsh Ta Tb       ==> Ab
-T@nsh Pa Pb Ra Rb ==> Ab
-```
-
-### Actual/current behaviour
-
-But if many keys are pressed together they are all made in the layer.
-
-```
-T@nsh Ta Tb       ==> Ab
-T@nsh Pa Pb Ra Rb ==> AB
-```
-
-### Attempt to create a button
-
-David Janssen created an "around-next-single" button (discussed in this [comment](https://github.com/kmonad/kmonad/issues/166#issuecomment-774505779)) to solve the around-next issue. I attempted to use that logic but the behaviour was no different to layer-next.
-
-```
-layerNextSingle :: LayerTag -> Button
-layerNextSingle t = onPress $ await isPress $ \_ -> do
-  layerOp (PushLayer t)
-  await (pure True) $ \_ -> do
-    layerOp (PopLayer t)
-    pure NoCatch
-  pure NoCatch
-```
-
-### Other ways of doing this
-
-This can be done by creating layers full of aliases whose only function is to perform one key and return but it uses a lot of config space if you use a lot of these type of layers. 
 
