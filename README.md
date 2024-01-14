@@ -9,6 +9,6 @@ And #167 [Make aroundNext only affect the next button](https://github.com/kmonad
 
 Each time I tried (layer-next mylayer) (around-next (layer-toggle mylayer)).
 
-In these commits, multiple keypresses are handled in the mylayer, provided they are pressed "together" and not pressed and released sequentially.
+In these commits, it is the same. Multiple keypresses are handled in the mylayer, provided they are pressed "together" and not pressed and released sequentially.
 
-I don't think I've ever observed behaviour of layer-next like that described in the tutorial, but maybe I haven't used enough versions of kmonad?
+
