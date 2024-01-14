@@ -1,4 +1,4 @@
-I was using a later commit from Jun 2021 ([Add logo to README #277](https://github.com/kmonad/kmonad/commit/e3e0154e7d3d37e94980a8c9274ed39d4a860ecc))
+I was using a commit from Jun 2021 ([Add logo to README #277](https://github.com/kmonad/kmonad/commit/e3e0154e7d3d37e94980a8c9274ed39d4a860ecc))
 
 I tried the first layer-next commit that [Added leader-key like button](https://github.com/kmonad/kmonad/commit/de85686be1a26cffa7e0dc1c2dcdffae452c86e8)
 
